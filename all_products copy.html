@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styling/headfoot.css" />
+    <link rel="stylesheet" href="styling/allprostyle.css" />
+</head>
+
+<body>
+
+    <header>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#">Cart</a>
+                <a href="#">Product</a>
+                <a href="#">Delivery</a>
+                <a href="#">Feedback</a>
+                <a href="#">Membership</a>
+                <a href="#">About Us</a>
+            </div>
+        </div>
+        <span style="cursor: pointer;" onclick="openNav()">&#9776;</span>
+
+        <nav class="topnav">
+            <div id="logo">
+                <!--用logo来做homepage键image link-->
+                <a href="Home" title="Home"><img src="images/logo.jpg" alt="Home Page"></a>
+                <h1>Penss</h1>
+            </div>
+
+            <ul>
+                <li> <a href="product_new.html">PRODUCT</a> </li>
+                <li> <a href="#">DELIVERY</a> </li>
+                <li> <a href="#">FEEDBACK</a> </li>
+                <li> <a href="#">MEMBERSHIP</a> </li>
+                <li> <a href="cart.html">ABOUT US</a> </li>
+            </ul>
+            <div id="cart">
+                <a href="#" title="Cart"><img src="images/cart.png" alt="Shopping Cart"></a>
+            </div>
+
+            <div id="darkmode">
+                <button onclick="darkMode()" id="dark-mode" title="Dark Mode"><img id="dark-image" src="images/dark.png"
+                        alt="Dark Mode" /></button>
+            </div>
+        </nav>
+        <!--cart的image link, 连去payment-->
+    </header>
+    <div class="top-photo"><img src="images/bg.jpg" alt="photo" width="100%" height="300px"></div>
+    <section class="product-content" id="product-content">
+        <div class="category-container">
+            <button class="category-title">Category</button>
+            <button class="category-btn active" onclick="filterSelection('all')">Show All</button>
+            <button class="category-btn" onclick="filterSelection('writing')">Writing Intruments</button>
+            <button class="category-btn" onclick="filterSelection('paper')">Papers Products</button>
+            <button class="category-btn" onclick="filterSelection('accessories')">Desk Accessories</button>
+            <button class="category-btn" onclick="filterSelection('others')">Others</button>
+        </div>
+        <div class="right-content">
+            <div class="top-search">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search.." />
+                    <button type="submit"><img src="images/search.png" alt="Search"></button>
+                    <a href="#product-content" title="Previous Page" class="top-pagination" onclick="openPage('list1')">&laquo;</a>
+                    <a href="#product-content" title="Next Page" class="top-pagination" onclick="openPage('list3')">&raquo;</a>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="product-list" id="list1">
+                    <div class="category writing">
+                        <img src="images/pen1.png" alt="1" />
+                        <h2>Blue Pen</h2>
+                        <p>RM0.90</p>
+                        <form id="productForm" action="payment.html" method="post">
+                            <input type="hidden" name="productName" value="Blue Pen">
+                            <input type="hidden" name="productPrice" value="0.90">
+                            <input type="hidden" name="productQuantity" value="1">
+                            <input type="hidden" name="productName" value="Blue Pen">
+                            <input type="hidden" name="productImage" value="images/pen1.jpg">
+                            <input type="submit" value="BUY NOW" onclick="submitProduct(event)">
+                        <a href="">BUY NOW</a>
+                    </form>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category paper">
+                        <img src="images/notebook.jpg" alt="1" />
+                        <h2>Notebook</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category accessories">
+                        <img src="images/penholder.jpg" alt="1" />
+                        <h2>Pen Holder</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category writing">
+                        <img src="images/colorpencil.jpg" alt="1" />
+                        <h2>Color Pencils</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category paper">
+                        <img src="images/stickynote.jpg" alt="1" />
+                        <h2>Sticky Notes</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category accessories">
+                        <img src="/images/memboard.jpg" alt="1" />
+                        <h2>Memo Board</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category writing">
+                        <img src="/images/ballpen.jpg" alt="1" />
+                        <h2>Ball Pen</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category paper">
+                        <img src="/images/A4paper.jpg" alt="1" />
+                        <h2>A4 Paper</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category others">
+                        <img src="/images/backpack.jpg" alt="1" />
+                        <h2>School Backpack</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                </div>
+                <div class="product-list" id="list2">
+                    <div class="category writing">
+                        <img src="/images/fountainpen.jpg" alt="1" />
+                        <h2>Fountain Pen</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category paper">
+                        <img src="/images/constructionpaper.jpg" alt="1" />
+                        <h2>Construction Paper</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category accessories">
+                        <img src="/images/paperclip.jpg" alt="1" />
+                        <h2>Pen</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category writing">
+                        <img src="/images/highlighter.jpg" alt="1" />
+                        <h2>Highlighter</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category paper">
+                        <img src="/images/wrappaper.jpg" alt="1" />
+                        <h2>Wrapping Paper</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category accessories">
+                        <img src="/images/bookend.jpg" alt="1" />
+                        <h2>Bookends</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category writing">
+                        <img src="/images/mechpencil.jpg" alt="1" />
+                        <h2>Mechanical Pencil</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category accessories">
+                        <img src="/images/eraser.jpg" alt="1" />
+                        <h2>Eraser</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category others">
+                        <img src="/images/folder.jpg" alt="1" />
+                        <h2>Folder</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                </div>
+                <div class="product-list" id="list3">
+                    <div class="category writing">
+                        <img src="/images/markers.jpg" alt="1" />
+                            <h2>Pen</h2>
+                            <p>RM0.90</p>
+                            <a href="">BUY NOW</a>
+                            <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category paper">
+                        <img src="/images/notepad.jpg" alt="1" />
+                        <h2>Notepad</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category accessories">
+                        <img src="/images/ruler.png" alt="ruler" />
+                        <h2>ruler</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category writing">
+                        <img src="/images/chalk.jpg" alt="1" />
+                        <h2>Chalks</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category paper">
+                        <img src="/images/graphpaper.jpg" alt="1" />
+                        <h2>Graph Paper</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category accessories">
+                        <img src="/images/sharpener.jpg" alt="1" />
+                        <h2>Pencil Sharpener</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category writing">
+                        <img src="/images/gelpen.jpg" alt="1" />
+                        <h2>Gel Pen</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category others">
+                        <img src="/images/scissors.jpg" alt="1" />
+                        <h2>Scissors</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                    <div class="category others">
+                        <img src="/images/puncher.jpg" alt="1" />
+                        <h2>Hole Puncher</h2>
+                        <p>RM0.90</p>
+                        <a href="">BUY NOW</a>
+                        <a href="">ADD TO CART</a>
+                    </div>
+                </div>
+                <div class="bottom-pagination">
+                    <a href="#product-content" class="firstPage" onclick="openPage('list1')">&laquo;</a>
+                    <a href="#product-content" class="page" id="defaultPage" onclick="openPage('list1')">1</a>
+                    <a href="#product-content" class="page" id="page" onclick="openPage('list2')">2</a>
+                    <a href="#product-content" class="page" id="page" onclick="openPage('list3')">3</a>
+                    <a href="#product-content" class="lastPage" onclick="openPage('list3')">&raquo;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <a href=" #">product</a>
+            <a href="#">delivery</a>
+            <a href="#">feedback</a>
+            <a href="#">membership</a>
+            <a href="cart.html">about us</a>
+
+        </div>
+        <div class="whatsapp">
+            <img src="images/whatsappIcon.png" alt="whatsapp" />
+        </div>
+    </footer>
+    <div class="back2top">
+        <a href="#">
+            BACK TO THE TOP</a>
+    </div>
+</body>
+<script src="function/main.js"></script>
+<script src="function/allprofunction.js"></script>
+<script src="pay.js"></script>
+</html>
