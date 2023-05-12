@@ -1,0 +1,394 @@
+  /*************/
+  /* slideshow */
+  /*************/
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Verdana, sans-serif;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-height: 200px;
+    height: 200x;
+    background-color: rgba(156, 121, 78, 0.607);
+    border: 2px solid gray;
+    margin-top: 2px;
+  }
+
+  .slideshow_pic_style {
+    object-fit: contain;
+    min-height: 100px;
+    width: 100%;
+    height: 200px;
+    max-height: 200px;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 20px;
+  }
+
+  .active {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+
+  /*****************/
+  /* all container */
+  /*****************/
+  .all_container {
+    margin-bottom: 20%;
+  }
+
+  /*********/
+  /* table */
+  /*********/
+  table,
+  td,
+  th {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  table {
+    width: auto;
+  }
+  
+
+  td {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 19px;
+  }
+
+  th {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .table {
+    display: inline-block;
+    overflow-x: auto;
+    width: auto;
+  }
+
+
+  th:nth-child(even),
+  td:nth-child(even) {
+    background-color: rgba(171, 110, 56, 0.3);
+  }
+
+  th:nth-child(odd),
+  td:nth-child(odd) {
+    background-color: rgb(233, 233, 233);
+  }
+
+  .stationery_pics {
+    width: 100px;
+    max-width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .pencil_table {
+    text-align: center;
+  }
+
+  .scissors_table {
+    text-align: center;
+  }
+
+  .notebook_table {
+    text-align: center;
+  }
+
+  .whiteboard_table {
+    text-align: center;
+  }
+
+
+
+  /**********************************************/
+  /* place which holds the price showing element*/
+  /**********************************************/
+  .showing_price {
+    display: inline-block;
+    background-color: rgba(239, 234, 204, 0.4);
+    width: 230px;
+    height: 15%;
+    color: rgb(39, 34, 31);
+    padding: 10px;
+    float: right;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    min-width: 230px;
+    max-width: 230px;
+  }
+
+  .order_summary {
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: ;
+    /*再看要怎样design*/
+  }
+
+  .subtotal {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 15%;
+    font-weight: bold;
+  }
+
+  .grand_total {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 15%;
+    font-weight: bold;
+  }
+
+  .subtotalRM {
+    display: block;
+    border: 1px solid black;
+    background-color: rgb(251, 251, 246);
+    margin-top: 10px;
+    width: 30%;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  .grand_totalRM {
+    display: block;
+    border: 1px solid black;
+    background-color: rgb(251, 251, 246);
+    margin-top: 10px;
+    width: 30%;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  /**************************/
+  /* layout for the buttons */
+  /**************************/
+  .buttons_layout {
+    display: inline-block;
+  }
+
+  /*****************/
+  /* submit button */
+  /*****************/
+  .submit_button {
+    display: block;
+  }
+
+  .submit_button_style {
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    background-color: rgb(251, 251, 246);
+    color: rgb(39, 34, 31);
+    transition-duration: 0.2s;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-size: 1.3em;
+  }
+
+  .submit_button_style:hover {
+    background-color: rgb(251, 251, 246);
+    opacity: 0.7;
+    color: rgb(39, 34, 31);
+  }
+
+  .submit_button_style:active {
+    background-color: rgb(251, 251, 246);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    opacity: 0.7;
+  }
+
+  .submit_button_style:visited {
+    color: rgb(126, 38, 57);
+  }
+
+  /****************************/
+  /* continue shopping button */
+  /****************************/
+  .product_page {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .product_page_button {
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    background-color: rgb(251, 251, 246);
+    color: rgb(39, 34, 31);
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 30px;
+    font-size: 1.3em;
+    text-decoration: none;
+    padding: 2px;
+    border: 2px solid black;
+  }
+
+  .product_page_button:hover {
+    background-color: rgb(251, 251, 246);
+    color: rgb(39, 34, 31);
+    opacity: 0.7;
+  }
+
+  .product_page_button:active {
+    background-color: rgb(251, 251, 246);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    opacity: 0.7;
+  }
+
+  .product_page_link {
+    text-decoration: none;
+    color: rgb(39, 34, 31);
+  }
+
+  /*************/
+  /* next page */
+  /*************/
+  .next_page {
+    display: block;
+  }
+
+  .page,
+  .firstPage,
+  .lastPage {
+    text-decoration: none;
+    color: black;
+  }
+
+  .first_page_design:active {
+    color: rgb(23, 146, 187);
+  }
+
+  .second_page_design:active {
+    color: rgb(23, 146, 187);
+  }
+
+  /******************/
+  /* hamburger icon */
+  /******************/
+  #hamburger-icon {
+    margin: auto 0;
+    display: block;
+    cursor: pointer;
+  }
+
+  #hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px 6px);
+  }
+
+  .open .bar2 {
+    opacity: 0;
+  }
+
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px -8px);
+  }
+
+  .open .mobile_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .mobile_menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+  }
+
+  /*********************************/
+  /* designs for mobile and tablet */
+  /*********************************/
+  @media only screen and (max-width: 600px) {
+    .slideshow_text {
+      font-size: 11px
+    }
+
+    #hamburger-icon {
+      display: block;
+    }
+
+    .all_container {
+      margin-bottom: 200px;
+    }
+
+    .all_container {
+      margin-bottom: 300px;
+    }
+  }

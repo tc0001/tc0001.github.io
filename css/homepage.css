@@ -1,0 +1,160 @@
+*{
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(140,156,118);
+  margin: 0;
+  padding: 0;
+}
+
+
+main {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#icon1 {
+  margin-bottom: 48px;
+}
+
+#icon1 h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#icon1 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#icon1 li {
+  list-style-type: none;
+  margin: 24px;
+  max-width: 350px;
+  text-align: center;
+}
+
+#icon1 img {
+  max-width: 300px;
+  height: 300px;
+  padding: 0px;
+  border: 10px solid rgb(183,112,45);
+  border-radius: 13px;
+  background-color: rgb(251,251,246);
+}
+
+#icon1 h3 {
+  margin: 15px 0;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: rgb(0,108,127);
+}
+
+#icon1 p {
+  text-align: justify;
+}
+
+#icon2 {
+  margin-bottom: 48px;
+}
+
+#icon2 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#icon2 li {
+  margin: 24px;
+  max-width: 350px;
+  text-align: center;
+  list-style-type: none;
+}
+
+#icon2 img {
+  max-width: 300px;
+  max-height: 300px;
+  padding: 0px;
+  border: 10px solid rgb(183,112,45);
+  border-radius: 13px;
+  background-color: rgb(251,251,246);
+}
+
+#icon2 h3 {
+  margin: 15px 0;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: rgb(0,108,127);
+}
+
+#icon2 p {
+  text-align: justify;
+}
+
+.bottomnav {
+  overflow: auto;
+  background-color: rgb(53,30,28); 
+  display: block;
+  width: 97%;
+  height: 500px; 
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.bottomnav a {
+  float: left;
+  display: block;
+  color: rgb(251, 251, 246); 
+  text-align: center;
+  padding: 0px 100px 0px 100px;
+  text-decoration: none;
+  transition: 0.5s; 
+}
+
+.bottomnav .text {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.centre {
+  width: 250px;
+  height: 250px;
+  margin-left: 650px;
+  margin-right: 0px;
+  border-radius: 50%;
+}
+
+h4 {
+  text-align: right;
+  text-transform: capitalize;
+  color: white;
+  margin-right: 160px;
+}
+
+h5 {
+  text-align: right;
+  text-transform: capitalize;
+  color: white;
+  margin-right: 40px;
+  font-size: 15px;
+}
+
+.styling {
+    text-align: center;
+    border: 8px dashed goldenrod;
+    border-radius: 16px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    color: rgb(251,251,246);
+    text-shadow: 3px 3px black;
+    background-color: rgb(	76,61,48);
+}

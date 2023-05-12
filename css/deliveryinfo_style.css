@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+body {
+    background-image: linear-gradient(orange,white);
+
+}
+
+.delInfo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.delInfo p {
+    line-height: 2;
+}
+
+.delInfo form {
+    padding: 10px 25%;
+    justify-content: center;
+    text-align: left;
+    background-color: rgb(191, 227, 215);
+}
+.delInfo h2 {
+    font-size: 1.2em;
+    text-decoration: underline royalblue;
+}
+
+.delInfo input {
+    margin-bottom: 20px;
+    font-size: 0.8em;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#regionBox {
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+#regionBox:hover {
+    background-color: rgb(207, 230, 253);
+}
+
+#submit {
+    cursor: pointer;
+    padding: 14px 16px;
+    box-shadow: 0 9px #999;
+    border-radius: 30px;
+}
+
+#submit:hover {
+    background-color: rgb(232, 178, 120);
+}
+
+#submit:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+
+}
+
+#regionBox {
+    margin-left: 20px;
+    font-size: 0.8em;
+}
+
+@media screen and (max-width:480px) {
+    .delInfo form {
+        font-size: 0.8em;
+        padding-left: 5%;
+        padding-bottom: 20px ;
+    }
+    .delInfo label[for=regionBox] {
+        text-align: center;
+        padding-left: 5%;
+    }
+    .delInfo input {
+        margin: auto;
+    }
+
+}

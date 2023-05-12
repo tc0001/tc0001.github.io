@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+.styling {
+  text-align: center;
+  border: 8px dashed goldenrod;
+  border-radius: 16px;
+  width: 300px;
+  font-size: 50px;
+  color: rgb(251, 251, 246);
+  text-shadow: 3px 3px black;
+  background-color: rgb(76, 61, 48);
+  margin: 30px auto;
+}
+
+#profile {
+  border: 8px solid red;
+  border-radius: 12px;
+  text-align: left;
+  width: 60%;
+  margin-bottom: 25px;
+  background-color: rgb(249, 144, 111);
+}
+
+#profile h3 {
+  font-size: 40px;
+  color: rgb(72, 146, 155);
+  text-decoration-line: underline;
+  text-decoration-color: rgb(53, 31, 25);
+  text-decoration-style: wavy;
+  text-shadow: 3px 3px black;
+  text-align: center;
+}
+
+#profile ol {
+  color: rgb(23, 20, 18);
+  font-size: 20px;
+}
+
+#vision_and_mission {
+  border: 8px double blue;
+  border-radius: 12px;
+  text-align: left;
+  width: 60%;
+  margin-left: 40%;
+  margin-bottom: 25px;
+  background-color: rgb(49, 117, 137);
+}
+
+#vision_and_mission h3 {
+  font-size: 40px;
+  color: rgb(72, 146, 155);
+  text-decoration-line: underline;
+  text-decoration-color: rgb(251, 251, 246);
+  text-decoration-style: wavy;
+  text-shadow: 3px 3px black;
+  text-align: center;
+}
+
+#vision_and_mission ol {
+  color: rgb(251, 251, 246);
+  font-size: 20px
+}
+
+#product_and_service {
+  border: 8px dotted yellow;
+  border-radius: 12px;
+  text-align: left;
+  width: 60%;
+  margin-bottom: 25px;
+  background-color: rgb(255, 165, 101);
+}
+
+#product_and_service h3 {
+  font-size: 40px;
+  color: rgb(72, 146, 155);
+  text-decoration-line: underline;
+  text-decoration-color: rgb(53, 31, 25);
+  text-decoration-style: wavy;
+  text-shadow: 3px 3px black;
+  text-align: center;
+}
+
+#product_and_service ol {
+  color: rgb(76, 61, 48);
+  font-size: 20px
+}
+
+h5 {
+  text-align: center;
+  font-size: 16px;
+  color: black;
+}
+
+/*********************************************************************/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+.row {
+  margin: 30px auto;
+}
+
+.about_us_column {
+  margin-bottom: 16px;
+  padding: 0px 8px 0px 8px;
+  background-color: transparent;
+  width: 24%;
+  height: 300px;
+  perspective: 1000px;
+  display: inline-block;
+}
+
+.card {
+  margin: 8px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: rgb(212, 212, 212) solid 1px;
+}
+
+.about_us_column:hover .card {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: white;
+  color: black;
+}
+
+.container {
+  padding: 0 16px;
+  background-color: whitesmoke;
+  color: rgb(39, 34, 31);
+  transform: rotateY(180deg);
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+/* button */
+.button {
+  border-radius: 20px;
+  border-color: black;
+  border-style: solid;
+  background-color: rgb(251, 251, 246);
+  color: rgb(39, 34, 31);
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.3em;
+  text-decoration: none;
+  padding: 2px;
+  border: 2px solid black;
+}
+
+.button:hover {
+  background-color: rgb(251, 251, 246);
+  color: rgb(39, 34, 31);
+  opacity: 0.7;
+}
+
+.button:active {
+  background-color: rgb(251, 251, 246);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  opacity: 0.7;
+}
+
+.button_link {
+  text-decoration: none;
+  color: rgb(39, 34, 31);
+}
+
+@media screen and (max-width: 600px) {
+
+  #profile,
+  #vision_and_mission,
+  #product_and_service {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .about_us_column {
+    width: 100%;
+    display: block;
+  }
+
+  .about_us_column .card {
+    width: 300px;
+  }
+
+}

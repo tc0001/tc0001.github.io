@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+.big-container{
+    font-size: 1.5em;
+}
+
+.product-content {
+    display: flex;
+}
+
+/*cateogry style*/
+.category-container {
+    margin: 200px 0px 0px 5%;
+}
+
+.category-container a {
+    text-decoration: none;
+}
+
+.category-container button {
+    position: relative;
+    display: block;
+    width: 200px;
+    font-size: 0.8em;
+    border: none;
+    cursor: pointer;
+    line-height: 3.5;
+}
+
+button.category-title {
+    cursor: default;
+    background-color: rgb(226, 142, 39);
+    font-weight: bold;
+}
+
+.category-container button.category-btn:hover {
+    background-color: gray;
+}
+
+.category-btn.active {
+    background-color: grey;
+    font-weight: 600;
+}
+
+.right-content {
+    flex: 80%;
+}
+
+.top-search {
+    width: 100%;
+    margin-right: 100px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/*search bar style*/
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    background-repeat: no-repeat;
+    margin: auto;
+    font-size: 1.1em;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.top-pagination {
+    margin-right: 1%;
+    padding: 8px 1px;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.top-pagination,
+.bottom-pagination a {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    font-weight: lighter;
+    padding-top: 4px;
+}
+
+.top-pagination:hover {
+    background-color: gray;
+}
+
+@media screen and (max-width: 480px) {
+    .top-search {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar {
+        margin-bottom: 10px;
+    }
+}
+
+/*product section */
+
+
+.product-container {
+    overflow: hidden;
+    margin-top: 50px;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.product-list {
+    width: 100%;
+    display: none;
+    margin-left: 10%;
+    min-height: 450px;
+}
+
+.category {
+    float: left;
+    margin-left: 5%;
+    margin-bottom: 40px;
+    width: 250px;
+    height: 400px;
+    background-color: whitesmoke;
+    display: none;
+    transition: 0.5s;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.category:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.show {
+    display: block;
+}
+
+.category-btn .active {
+    background-color: gray;
+}
+
+.category img {
+    width: 100%;
+    height: 60%;
+}
+
+.product-list div h2,
+.product-list div p {
+    line-height: 2;
+    text-align: center;
+    height: 10%;
+}
+
+.product-container .product-list a {
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    float: left;
+    text-decoration: none;
+    background-color: wheat;
+    color: black;
+    font-size: 1em;
+    width: 100%;
+    line-height: 1.5;
+    height: 10%;
+    transition: 0.3s;
+}
+
+.product-container .product-list a:hover {
+    opacity: 0.1;
+}
+
+/* bottom pagination section */
+.bottom-pagination {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.bottom-pagination a {
+    margin-left: 5px;
+    padding: 8px 1px;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.bottom-pagination .firstPage,
+.bottom-pagination :last-child {
+    padding: 4px;
+}
+
+.bottom-pagination a:hover {
+    background-color: gray;
+}
+
+.bottom-pagination a:active {
+    background-color: grey;
+}
+
+@media screen and (max-width:900px) {
+    .top-photo {
+        display: none;
+    }
+
+    .product-content {
+        flex-direction: column;
+    }
+
+    .category-container {
+        margin: 30px auto;
+    }
+
+    .search-bar {
+        font-size: 0.7em;
+    }
+
+    .search-bar button {
+        max-width: 30px;
+        height: 26px;
+    }
+
+    .search-bar button img {
+        max-width: 18px;
+    }
+
+    .product-list {
+        margin-left: 0;
+        width: 100%;
+
+    }
+
+    .product-list div {
+        margin-left: 10%;
+    }
+
+    .top-pagination {
+        display: none;
+    }
+}

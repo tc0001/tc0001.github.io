@@ -1,0 +1,157 @@
+.btn-pop{ 
+    background-color:rgb(199, 62, 85);
+    border-radius: 10px;  
+    border:0px; 
+    zoom:200%; 
+   
+
+}
+#background-pop{  
+    
+    display: none;  
+    position: fixed;   
+    left: 0;    
+    top: 0;
+    width: 100%; 
+    height: 100%;   
+    background-color: rgba(0,0,0,0.5); 
+}
+#div-pop{   
+    background:#ffffff; 
+    width:30%;  
+    z-index: 1; 
+    margin: 12% auto;   
+    overflow: auto; 
+}
+.div-top{   
+    width: 100%;    
+    height: auto;   
+    background-color: rgb(53,30,28);
+    color: #ffffff; 
+    text-align: center;
+    
+}
+#top-pic{
+    width: 320px;
+    height:  200px;
+    margin-left: -25px;
+    margin-right: -25px; 
+    margin-top: -20px;
+
+    
+
+}
+.div-top div{   
+    padding: 1px 1px 1px 1px;
+    text-align: center;
+}
+span{  
+    color:grey;  
+    margin-bottom: 10px ; 
+    margin-left: 20px ; 
+    cursor: pointer;   
+    float: right;  
+}
+.div-content{   
+    width: auto;    
+    height: 200px;  
+    overflow: auto;
+
+}
+.div-footer{    
+    text-align: center; 
+    background-color: darkgray; 
+}
+/**star**/
+svg {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.15rem;
+  }
+  
+  
+  /* hide radio buttons */
+  
+  input[name="star"] {
+    display: inline-block;
+    width: 0;
+    opacity: 0;
+    margin-left: -2px;
+  }
+  
+  /* hide source svg */
+  
+  .star-source {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  
+  
+  /* set initial color to transparent so fill is empty*/
+  
+  .star {
+    color: transparent;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  
+  /* set direction to row-reverse so 5th star is at the end and ~ can be used to fill all sibling stars that precede last starred element*/
+  
+  .star-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  
+  label:hover ~ label .star,
+  svg.star:hover,
+  input[name="star"]:focus ~ label .star,
+  input[name="star"]:checked ~ label .star {
+    color: #d62a9d;
+  }
+  
+  input[name="star"]:checked + label .star {
+    animation: starred 0.5s;
+  }
+  
+  input[name="star"]:checked + label {
+    animation: scaleup 1s;
+  }
+  
+  @keyframes scaleup {
+    from {
+      transform: scale(1.2);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes starred {
+    from {
+      color: #600040;
+    }
+    to {
+      color: #d62a9d;
+    }
+  }
+
+  /**/
+  input[type=submit] {
+    background-color: rgb(199, 62, 85);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(238,169,169);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  

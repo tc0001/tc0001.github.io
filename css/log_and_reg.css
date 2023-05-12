@@ -1,0 +1,155 @@
+main {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    margin-top: 100px;
+
+}
+
+.wrapper {
+    overflow: hidden;
+    max-width: 390px;
+    background-color: rgb(162,215,221);
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .title-text {
+    display: flex;
+    width: 250%;
+}
+
+
+.wrapper .title-text .title {
+    width: 50%;
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 70px;
+    margin-bottom: 20px;
+}
+
+.wrapper .form-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.form-container .slider-controller{
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    margin: 30px,0px,10px,0px;
+    overflow: hidden;
+    border: 1px solid rgb(0,100,66);
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.slider-controller .slide {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    color: rgb(251,251,246);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+
+.slider-controller .register{
+    color: rgb(23,20,18);
+}
+
+.slider-controller .slider-tabbing {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 0;
+    border-radius: 8px;
+    background: -webkit-linear-gradient(left, #DC3023, #003171);
+    transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+input[type="radio"]{
+    display: none;
+}
+#register:checked ~ .slider-tabbing {
+    left: 50%;
+}
+
+#register:checked ~ .register {
+    color: rgb(251,251,246);
+}
+
+#register:checked ~ .login {
+    color: rgb(23,20,18);
+}
+
+.form-container .form-inner {
+    display: flex;
+    width: 200%;
+}
+
+.form-container .form-inner form {
+    width: 50%;
+}
+
+.form-container .form-inner form .field {
+    height: 55px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-inner form .field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 5px;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 1px solid rgb(	0,100,66);
+    border-bottom-width: 2px;
+    transition: all 0.5s ease;
+}
+
+.form-inner form .field input:focus {
+    border-color: rgb(227,177,48);
+}
+
+.form-inner form .forgot_password {
+    margin-top: 8px;
+}
+
+.form-inner form .forgot_password a {
+    color: rgb(248,103,79);
+    text-decoration: none;
+}
+
+.form-inner form .register_link a {
+    color: rgb(105,103,171);
+    text-decoration: none;
+}
+
+.form-inner form .register_link {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.form-inner form .forgot_password a:hover,
+.form-inner form .register_link a:hover {
+    text-decoration: underline;
+}
+
+.form-inner form .field input[type="submit"] {
+    background: -webkit-linear-gradient(left, #DC3023, #003171);
+    color: rgb(251,251,246);
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 0px;
+    border: none;
+    cursor: pointer;
+}

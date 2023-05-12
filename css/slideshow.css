@@ -1,0 +1,67 @@
+/* Header content with slideshow*/
+
+* {box-sizing: border-box;}
+header {
+  font-family: 'Times New Roman', Times, serif;
+
+}
+div>img {
+  vertical-align: middle;
+  border: 7px solid rgb(217,182,17);
+  border-radius: 16px;
+}
+
+.slidestationery {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+}
+
+div.text {
+  color: rgb(75,60,51);
+  font-size: 30px;
+  padding: 10px 15px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 3px 3px rgb(227, 177, 48);
+  text-transform: capitalize;
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+  color: rgb(57, 52, 50);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  text-shadow: 3px 3px rgb(100, 85, 48);
+}
+
+.bullet {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(94, 40, 36);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.8s ease;
+}
+
+.active, .bullet:hover {
+  background-color: rgb(188,181,140)
+}
+
+@-webkit-keyframes fade {
+  0% {opacity: 0.4;}
+  100% {opacity: 1;}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}

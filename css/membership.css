@@ -1,0 +1,145 @@
+/* allcard's container */
+body {
+  overflow-x: hidden;
+}
+.allcard{
+  margin-left: 20%;
+  margin-top: 50px;
+}
+
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price1 {
+  color: rgb(199, 62, 85);
+  font-size: 22px;
+}
+
+.card1 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card1 button:hover {
+  opacity: 0.7;
+}
+
+.card_no1{
+  display: inline-block;
+}
+
+/* card2 */
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price2 {
+  color: rgb(199, 62, 85);
+  font-size: 22px;
+}
+
+.card2 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card2 button:hover {
+  opacity: 0.7;
+}
+
+.card_no2{
+  display: inline-block;
+}
+
+/* card3 */
+.card3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price3 {
+  color: rgb(199, 62, 85);
+  font-size: 22px;
+}
+
+.card3 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card3 button:hover {
+  opacity: 0.7;
+}
+
+.card_no3{
+  display: inline-block;
+}
+/**pic down**/
+
+.allimf {
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.imf{
+  width: 280px;
+  height: 280px;
+  display: inline-block;
+  object-fit: cover;
+  margin-right: 50px;
+}
+.imf img {
+  max-width: 280px;
+  height: 280px;
+}
+
+
+
+
+/* designs for mobile and tablet */
+@media only screen and (max-width: 600px){
+ .allcard{
+  margin: 25%;
+ }
+}
+
+/* designs for mobile */
+@media only screen and (max-width: 400px){
+  .allcard{
+   margin: 10%;
+  }
+ }

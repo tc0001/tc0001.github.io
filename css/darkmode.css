@@ -1,0 +1,85 @@
+/* nav bars */
+.dark-mode header{
+    background-color: rgb(151, 47, 70);
+}
+.dark-mode .openbtn {
+    background-color: rgb(151, 47, 70);
+
+}
+.dark-mode footer{
+    background-color: rgb(151, 47, 70);
+}
+
+/*featured page*/
+.dark-mode {
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: none;
+}
+
+.dark-mode section h2 {
+    color: white;
+}
+
+.dark-mode .time {
+    color: white;
+}
+
+.all-product h2 {
+    color: white;
+}
+
+.all-product a:hover h2 {
+    color: black;
+}
+
+/*all products page*/
+.dark-mode .category {
+    background-color: gray;
+}
+.dark-mode .category p {
+    color: white;
+}
+.dark-mode .top-pagination,.dark-mode .bottom-pagination a {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+.dark-mode .top-pagination:hover,.dark-mode .bottom-pagination a:hover {
+    background-color: rgb(175, 238, 238);
+}
+
+/*delivery page*/
+.dark-mode .delDesc{
+    background-color: rgb(10, 110, 55);
+    color: white;
+}
+.dark-mode .partner {
+    background-color: rgb(97, 134, 119);
+    color: white;
+}
+.dark-mode .faq {
+    color: white;
+}
+.dark-mode .faq button {
+    background-color: rgb(48, 47, 47);
+    color: white;
+}
+.dark-mode .faq .answer {
+    background-color: rgb(109, 109, 109);
+}
+
+/*delivery info page */
+.dark-mode .delInfo {
+    color: white;
+}
+.dark-mode .delInfo form {
+    background-color: rgb(86, 109, 102);
+}
+.dark-mode .delInfo input {
+    background-color: rgb(85, 83, 83);
+    color: white;
+}
+.dark-mode .delInfo form #regionBox  {
+    background-color: rgb(119, 133, 148);
+    color: white;
+}
