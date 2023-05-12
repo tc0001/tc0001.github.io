@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Payment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./css/headfoot.css" rel="stylesheet" />
+  <link href="./css/darkmode.css" rel="stylesheet" />
+  <link href="./css/payment.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <header>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn">&times;</a>
+      <div class="overlay-content">
+        <a href="cart.html">Cart</a>
+        <a href="feat_products.html">Product</a>
+        <a href="delivery_main.html">Delivery</a>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="membership.html">Membership</a>
+        <a href="about_us.html">About Us</a>
+        <a href="login_and_register.html">Sign In</a>
+      </div>
+    </div>
+    <span style="cursor: pointer;" class="openbtn">&#9776;</span>
+
+    <nav class="topnav">
+      <div id="logo">
+        <!--用logo来做homepage键image link-->
+        <a href="index.html" title="Home"><img src="images/logo.jpg" alt="Home Page"></a>
+        <h1>Penss</h1>
+      </div>
+
+      <ul>
+        <li> <a href="feat_products.html">PRODUCT</a> </li>
+        <li> <a href="delivery_main.html">DELIVERY</a> </li>
+        <li> <a href="contact_us.html">CONTACT US</a> </li>
+        <li> <a href="membership.html">MEMBERSHIP</a> </li>
+        <li> <a href="about_us.html">ABOUT US</a> </li>
+        <li> <a href="login_and_register.html">SIGN IN</a> </li>
+      </ul>
+      <div id="cart">
+        <a href="cart.html" title="Cart"><img src="images/cart.png" alt="Shopping Cart"></a>
+      </div>
+      <div id="darkmode">
+        <button id="dark-mode" title="Dark Mode"><img id="dark-image" src="images/dark.png" alt="Dark Mode" /></button>
+      </div>
+    </nav>
+    <!--cart的image link, 连去payment-->
+  </header>
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+
+
+  <div class="checkout_container">
+    <div class="checkout_row">
+      <div class="checkout_form">
+        <div class="container">
+          <form action="delivery_info.html">
+
+            <div class="checkout_row">
+              <div class="subcheckout_form">
+                <h3>Billing Address</h3>
+                <label for="fname">&#128125; Full Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Je Ro Me" required>
+                <label for="email">&#9993; Email</label>
+                <input type="email" id="email" name="email" placeholder="je-ro-me@example.com" required>
+                <label for="adr">&#127968; Address</label>
+                <input type="text" id="adr" name="address" placeholder="4, Jalan Setapak 1, Taman Setapak" required>
+                <label for="city">&#127747; City</label>
+                <input type="text" id="city" name="city" placeholder="Kuala Lumpur" required>
+
+                <div class="checkout_row">
+                  <div class="subcheckout_form">
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" placeholder="KL" required>
+                  </div>
+                  <div class="subcheckout_form">
+                    <label for="postcode">Post Code</label>
+                    <input type="text" id="postcode" name="postcode" pattern="\d{5}" placeholder="53300" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="subcheckout_form">
+                <h3>Payment</h3>
+                <label for="fname">Accepted Methods</label>
+                <div class="icon-container">
+                  <img class="payment_logo" src="./image/visa.svg" alt="visa logo"></a>
+                  <img class="payment_logo" src="./image/Mastercard-logo.svg" alt="master card logo"></a>
+                  <img class="payment_logo" src="./image/Touch_'n_Go_logo.svg" alt="touch and go logo"></a>
+                </div>
+
+                <label for="cname">Name on Card</label>
+                <input type="text" id="cname" name="cardname" placeholder="Je Ro Me" required>
+                <label for="ccnum">Credit card number</label>
+                <input type="text" id="ccnum" name="cardnumber" pattern="\d{4}-\d{4}-\d{4}-\d{4}"
+                  placeholder="1111-2222-3333-4444" required>
+                <label for="expmonth">Exp Month</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+                <div class="checkout_row">
+                  <div class="subcheckout_form">
+                    <label for="expyear">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear" pattern="\d{4}" placeholder="2018" required>
+                  </div>
+                  <div class="subcheckout_form">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" pattern="\d{3}" placeholder="352" required>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+            </label>
+            <input type="submit" value="Continue to checkout" class="btn">
+          </form>
+        </div>
+      </div>
+      <div class="shopping_cart">
+        <div class="container">
+          <h4>Cart <span class="price" style="color:black">&#128722; <b>4</b></span></h4>
+
+          <hr>
+
+          <p><img class="images" src="./image/hb pencil.png"> <span class="price">RM1</span></p>
+          <p><img class="images" src="./image/scissors.png"> <span class="price">RM4</span></p>
+          <p><img class="images" src="./image/notebook.png"> <span class="price">RM2.5</span></p>
+          <p><img class="images" src="./image/Whiteboard.png"> <span class="price">RM15</span></p>
+          <hr>
+          <p>Total <span class="price" style="color:black"><b>RM22.5</b></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ----------------------------------------------------------------------------------------------- -->
+  <footer>
+    <div class="link-container">
+      <div class="links">
+        <h1>Product</h1>
+        <ul>
+          <li><a href="feat_products.html">Product Overview</a></li>
+          <li><a href="all_product.html">All products</a></li>
+        </ul>
+      </div>
+      <div class="links">
+        <h1>Delivery</h1>
+        <ul>
+          <li><a href="delivery_main.html">Delivery Details</a></li>
+        </ul>
+      </div>
+      <div class="links">
+        <h1>Contact Us</h1>
+        <ul>
+          <li><a href="contact_us.html">Ask for Help</a></li>
+        </ul>
+      </div>
+      <div class="links">
+        <h1>Membership</h1>
+        <ul>
+          <li><a href="membership.html">Subscription</a></li>
+        </ul>
+      </div>
+      <div class="links">
+        <h1>About Us</h1>
+        <ul>
+          <li><a href="about_us.html">About Penss</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="logo">
+      <a href="index.html" title="Home"><img src="images/logo.jpg" alt="Home Page"></a>
+      <h1>Penss</h1>
+    </div>
+    </div>
+    <div class="contact">
+      <h2>Contact US:</h2>
+      <br>
+      <p>Tel &nbsp;&nbsp;&nbsp;: <a href="tel:+60234984734">02-34984734</a></p>
+      <p>Email: <a href="mailto:penss@gmail.com">penns@gmail.com</a></p>
+    </div>
+    <div class="whatsapp">
+      <a href="https://wa.me/601133728112"><img src="images/whatsappIcon.png" alt="whatsapp" /></a>
+    </div>
+    <div class="copyright">
+      <p> &nbsp;&#169; 2023 Penss. All rights reserved.</p>
+    </div>
+
+  </footer>
+  <button id="b2tBtn" title="Back to Top">Top</button>
+  <div class="back2top">
+    <a href="#">
+      BACK TO THE TOP</a>
+  </div>
+  <!-- ----------------------------------------------------------------------------------------------- -->
+
+</body>
+
+<script src="./js/general.js"></script>
+<script src="./js/main.js"></script>
+
+</html>

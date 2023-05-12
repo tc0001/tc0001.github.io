@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./css/headfoot.css" rel="stylesheet" />
+  <link href="./css/darkmode.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/homepage.css">
+  <link rel="stylesheet" href="./css/slideshow.css">
+</head>
+
+<body>
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <header>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn">&times;</a>
+      <div class="overlay-content">
+        <a href="cart.html">Cart</a>
+        <a href="feat_products.html">Product</a>
+        <a href="delivery_main.html">Delivery</a>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="membership.html">Membership</a>
+        <a href="about_us.html">About Us</a>
+        <a href="login_and_register.html">Sign In</a>
+      </div>
+    </div>
+    <span style="cursor: pointer;" class="openbtn">&#9776;</span>
+
+    <nav class="topnav">
+      <div id="logo">
+        <!--用logo来做homepage键image link-->
+        <a href="index.html" title="Home"><img src="images/logo.jpg" alt="Home Page"></a>
+        <h1>Penss</h1>
+      </div>
+
+      <ul>
+        <li> <a href="feat_products.html">PRODUCT</a> </li>
+        <li> <a href="delivery_main.html">DELIVERY</a> </li>
+        <li> <a href="contact_us.html">CONTACT US</a> </li>
+        <li> <a href="membership.html">MEMBERSHIP</a> </li>
+        <li> <a href="about_us.html">ABOUT US</a> </li>
+        <li> <a href="login_and_register.html">SIGN IN</a> </li>
+      </ul>
+      <div id="cart">
+        <a href="cart.html" title="Cart"><img src="images/cart.png" alt="Shopping Cart"></a>
+      </div>
+      <div id="darkmode">
+        <button id="dark-mode" title="Dark Mode"><img id="dark-image" src="images/dark.png" alt="Dark Mode" /></button>
+      </div>
+    </nav>
+    <!--cart的image link, 连去payment-->
+  </header>
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+
+
+  <div class="header">
+    <div class="slidestationery">
+
+      <div class="slides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="images/Stationery.jpg" style="width:100%">
+        <div class="text">Stationery</div>
+      </div>
+
+      <div class="slides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="images/top-photo.jpg" style="width:100%">
+        <div class="text">
+          stationery design special and convenient</div>
+      </div>
+
+      <div class="slides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="images/Penss_stationery.jpg" style="width:100%">
+        <div class="text">Stationery at cheap prices</div>
+      </div>
+
+      <div class="slides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="images/Stationery_for_us.jpg" style="width:100%">
+        <div class="text">Functional stationery for everyone</div>
+      </div>
+
+      <div class="slides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="images/For_stationery.jpg" style="width:100%">
+        <div class="text">How important is everyone's love for stationery</div>
+      </div>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="bullet"></span>
+      <span class="bullet"></span>
+      <span class="bullet"></span>
+      <span class="bullet"></span>
+      <span class="bullet"></span>
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("slides");
+        var dots = document.getElementsByClassName("bullet");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace("active", "dot");
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+
+        setTimeout(showSlides, 5000);
+      }
+
+    </script>
+  </div>
+
+  <main>
+    <section id="icon1">
+      <h2>Properties about the stationery store</h2>
+      <ul>
+        <li>
+          <img src="images/fastdelivery.png" alt="fast delivery">
+          <h3>Fast Delivery</h3>
+          <p>All stationery can be delivered to your address within 48 hours to ensure fast delivery.
+            Prompt delivery to your address by a professional courier.</p>
+        </li>
+        <li>
+          <img src="images/cheapprice.jpg" alt="cheap price">
+          <h3>Cheap Price</h3>
+          <p>The price of all stationery is cheap,
+            so that customers can buy the stationery you need at a cheap price.
+            The price of stationery became affordable.</p>
+        </li>
+        <li>
+          <img src="images/goodfeedback.png" alt="good feed back">
+          <h3>Good FeedBack</h3>
+          <p>The stationery purchased by customers makes them satisfied and lovable.
+            The service of our stationery store has made many customers have good evaluations and feedbacks,
+            so that our stationery store can serve our customers.</p>
+        </li>
+      </ul>
+    </section>
+    <section id="icon2">
+      <ul>
+        <li>
+          <img src="images/safety.png" alt="safety">
+          <h3>Safe quality</h3>
+          <p>Our stationery is 100% safe to use,
+            so that there will be no accidents in our stationery,
+            also makes that there will be no accidents in our stationery, and it will also make our customers use the
+            stationery safe and secure.</p>
+        </li>
+        <li>
+          <img src="images/popular.png" alt="popular">
+          <h3>Popular</h3>
+          <p>Our stationery store can implement branches, which makes the stationery store very popular,
+            and also enables the stationery store to allow our customers to buy the stationery and supplies they need
+            all over the world.</p>
+        </li>
+        <li>
+          <img src="images/productquality.png" alt="productquality">
+          <h3>Product quality</h3>
+          <p>The quality of stationery is special and ordinary, and the quantity and type of stationery are different,
+            so that our customers can attract the attention of stationery.
+            At the same time, it also allows our customers to buy the stationery and items they want.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- ----------------------------------------------------------------------------------------------- -->
+  <footer>
+    <div class="link-container">
+      <div class="links">
+        <h1>Product</h1>
+        <ul>
+          <li><a href="feat_products.html">Product Overview</a></li>
+          <li><a href="all_product.html">All products</a></li>
+        </ul>
+      </div>
+      <div class="links">
+        <h1>Delivery</h1>
+        <ul>
+          <li><a href="delivery_main.html">Delivery Details</a></li>
+        </ul>
+      </div>
+      <div class="links">
+        <h1>Contact Us</h1>
+        <ul>
+          <li><a href="contact_us.html">Ask for Help</a></li>
+        </ul>
+      </div>
+      <div class="links">
+        <h1>Membership</h1>
+        <ul>
+          <li><a href="membership.html">Subscription</a></li>
+        </ul>
+      </div>
+      <div class="links">
+        <h1>About Us</h1>
+        <ul>
+          <li><a href="about_us.html">About Penss</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="logo">
+      <a href="index.html" title="Home"><img src="images/logo.jpg" alt="Home Page"></a>
+      <h1>Penss</h1>
+    </div>
+    </div>
+    <div class="contact">
+      <h2>Contact US:</h2>
+      <br>
+      <p>Tel &nbsp;&nbsp;&nbsp;: <a href="tel:+60234984734">02-34984734</a></p>
+      <p>Email: <a href="mailto:penss@gmail.com">penns@gmail.com</a></p>
+    </div>
+    <div class="whatsapp">
+      <a href="https://wa.me/601133728112"><img src="images/whatsappIcon.png" alt="whatsapp" /></a>
+    </div>
+    <div class="copyright">
+      <p> &nbsp;&#169; 2023 Penss. All rights reserved.</p>
+    </div>
+
+  </footer>
+  <button id="b2tBtn" title="Back to Top">Top</button>
+  <div class="back2top">
+    <a href="#">
+      BACK TO THE TOP</a>
+  </div>
+  <!-- ----------------------------------------------------------------------------------------------- -->
+
+
+</body>
+
+<script src="./js/formsubmit.js"></script>
+<script src="./js/general.js"></script>
+<script src="./js/main.js"></script>
+
+
+</html>

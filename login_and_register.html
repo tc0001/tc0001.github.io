@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/headfoot.css" rel="stylesheet" />
+    <link href="./css/darkmode.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/log_and_reg.css" />
+    <link rel="stylesheet" href="./css/homepage.css" />
+    <title>Login and Register</title>
+</head>
+
+<body>
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <header>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn">&times;</a>
+            <div class="overlay-content">
+                <a href="cart.html">Cart</a>
+                <a href="feat_products.html">Product</a>
+                <a href="delivery_main.html">Delivery</a>
+                <a href="contact_us.html">Contact Us</a>
+                <a href="membership.html">Membership</a>
+                <a href="about_us.html">About Us</a>
+                <a href="login_and_register.html">Sign In</a>
+            </div>
+        </div>
+        <span style="cursor: pointer;" class="openbtn">&#9776;</span>
+
+        <nav class="topnav">
+            <div id="logo">
+                <!--用logo来做homepage键image link-->
+                <a href="index.html" title="Home"><img src="images/logo.jpg" alt="Home Page"></a>
+                <h1>Penss</h1>
+            </div>
+
+            <ul>
+                <li> <a href="feat_products.html">PRODUCT</a> </li>
+                <li> <a href="delivery_main.html">DELIVERY</a> </li>
+                <li> <a href="contact_us.html">CONTACT US</a> </li>
+                <li> <a href="membership.html">MEMBERSHIP</a> </li>
+                <li> <a href="about_us.html">ABOUT US</a> </li>
+                <li> <a href="login_and_register.html">SIGN IN</a> </li>
+            </ul>
+            <div id="cart">
+                <a href="cart.html" title="Cart"><img src="images/cart.png" alt="Shopping Cart"></a>
+            </div>
+            <div id="darkmode">
+                <button id="dark-mode" title="Dark Mode"><img id="dark-image" src="images/dark.png"
+                        alt="Dark Mode" /></button>
+            </div>
+        </nav>
+        <!--cart的image link, 连去payment-->
+    </header>
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+
+    <main>
+        <div class="wrapper">
+            <div class="title-text">
+                <div class="title login">Login Form</div>
+                <div class="title signup">Register Form</div>
+            </div>
+            <div class="form-container">
+                <div class="slider-controller">
+                    <input type="radio" name="shift" id="login" checked>
+                    <input type="radio" name="shift" id="register">
+                    <label for="login" class="slide login">Login</label>
+                    <label for="register" class="slide register">Register</label>
+                    <div class="slider-tabbing"></div>
+                </div>
+                <div class="form-inner">
+                    <form action="#" class="login">
+                        <div class="field">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="forgot_password"><a href="#">Forgot Password?</a></div>
+                        <div class="field">
+                            <input type="submit" value="Login">
+                        </div>
+                        <div class="register_link">Not a Member?<a href="#">Register Now</a></div>
+                    </form>
+                    <form action="#" class="register">
+                        <div class="field">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" placeholder="Confirm Password" required>
+                        </div>
+                        <div class="field">
+                            <input type="submit" value="Signup">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const LoginForm = document.querySelector("form.login");
+            const RegisterForm = document.querySelector("form.register");
+            const LoginBtn = document.querySelector("label.login");
+            const RegisterBtn = document.querySelector("label.register");
+            const RegisterLink = document.querySelector(".register_link a");
+            const Logintext = document.querySelector(".title-text .login");
+            const Registertext = document.querySelector(".title-text .register");
+            RegisterBtn.onclick = (() => {
+                LoginForm.style.marginLeft = '-50%'
+                Logintext.style.marginLeft = '-50%'
+            })
+            LoginBtn.onclick = (() => {
+                LoginForm.style.marginLeft = '0%'
+                Logintext.style.marginLeft = '0%'
+            });
+            RegisterLink.onclick = (() => {
+                RegisterBtn.click();
+                return false;
+            })
+        </script>
+
+    </main>
+
+
+    <!-- ----------------------------------------------------------------------------------------------- -->
+    <footer>
+        <div class="link-container">
+          <div class="links">
+            <h1>Product</h1>
+            <ul>
+              <li><a href="feat_products.html">Product Overview</a></li>
+              <li><a href="all_product.html">All products</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <h1>Delivery</h1>
+            <ul>
+              <li><a href="delivery_main.html">Delivery Details</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <h1>Contact Us</h1>
+            <ul>
+              <li><a href="contact_us.html">Ask for Help</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <h1>Membership</h1>
+            <ul>
+              <li><a href="membership.html">Subscription</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <h1>About Us</h1>
+            <ul>
+              <li><a href="about_us.html">About Penss</a></li>
+            </ul>
+          </div>
+    
+        </div>
+    
+        <div class="logo">
+          <a href="index.html" title="Home"><img src="images/logo.jpg" alt="Home Page"></a>
+          <h1>Penss</h1>
+        </div>
+        </div>
+        <div class="contact">
+          <h2>Contact US:</h2>
+          <br>
+          <p>Tel &nbsp;&nbsp;&nbsp;: <a href="tel:+60234984734">02-34984734</a></p>
+          <p>Email: <a href="mailto:penss@gmail.com">penns@gmail.com</a></p>
+        </div>
+        <div class="whatsapp">
+          <a href="https://wa.me/601133728112"><img src="images/whatsappIcon.png" alt="whatsapp" /></a>
+        </div>
+        <div class="copyright">
+          <p> &nbsp;&#169; 2023 Penss. All rights reserved.</p>
+        </div>
+    
+      </footer>
+    <button id="b2tBtn" title="Back to Top">Top</button>
+    <div class="back2top">
+        <a href="#">
+            BACK TO THE TOP</a>
+    </div>
+    <!-- ----------------------------------------------------------------------------------------------- -->
+
+</body>
+
+<script src="./js/main.js"></script>
+
+
+</html>

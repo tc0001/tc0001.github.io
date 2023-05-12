@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>penss stationery company</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="./css/headfoot.css" rel="stylesheet" />
+   <link href="./css/darkmode.css" rel="stylesheet" />
+   <link href="./css/cart2.css" rel="stylesheet" />
+</head>
+
+<body>
+
+   <!-- -------------------------------------------------------------------------------------------------------- -->
+   <header>
+      <div id="myNav" class="overlay">
+         <a href="javascript:void(0)" class="closebtn">&times;</a>
+         <div class="overlay-content">
+            <a href="cart.html">Cart</a>
+            <a href="feat_products.html">Product</a>
+            <a href="delivery_main.html">Delivery</a>
+            <a href="contact_us.html">Contact Us</a>
+            <a href="membership.html">Membership</a>
+            <a href="about_us.html">About Us</a>
+            <a href="login_and_register.html">Sign In</a>
+         </div>
+      </div>
+      <span style="cursor: pointer;" class="openbtn">&#9776;</span>
+
+      <nav class="topnav">
+         <div id="logo">
+            <!--用logo来做homepage键image link-->
+            <a href="index.html" title="Home"><img src="images/logo.jpg" alt="Home Page"></a>
+            <h1>Penss</h1>
+         </div>
+
+         <ul>
+            <li> <a href="feat_products.html">PRODUCT</a> </li>
+            <li> <a href="delivery_main.html">DELIVERY</a> </li>
+            <li> <a href="contact_us.html">CONTACT US</a> </li>
+            <li> <a href="membership.html">MEMBERSHIP</a> </li>
+            <li> <a href="about_us.html">ABOUT US</a> </li>
+            <li> <a href="login_and_register.html">SIGN IN</a> </li>
+         </ul>
+         <div id="cart">
+            <a href="cart.html" title="Cart"><img src="images/cart.png" alt="Shopping Cart"></a>
+         </div>
+         <div id="darkmode">
+            <button id="dark-mode" title="Dark Mode"><img id="dark-image" src="images/dark.png"
+                  alt="Dark Mode" /></button>
+         </div>
+      </nav>
+      <!--cart的image link, 连去payment-->
+   </header>
+   <!-- -------------------------------------------------------------------------------------------------------- -->
+
+
+   <div class="all_container">
+
+      <!-- slideshow -->
+      <div class="slideshow-container">
+
+         <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img class="slideshow_pic_style" src="./image/slideshowpic1.png">
+            <div class="slideshow_text"></div>
+         </div>
+
+         <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img class="slideshow_pic_style" src="./image/slideshowpic2.png">
+            <div class="slideshow_text"></div>
+         </div>
+
+         <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img class="slideshow_pic_style" src="./image/slideshowpic3.png">
+            <div class="slideshow_text"></div>
+         </div>
+
+         <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img class="slideshow_pic_style" src="./image/slideshowpic4.png">
+            <div class="slideshow_text"></div>
+         </div>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+      </div>
+
+      <!-- table -->
+      <div class="table">
+         <table>
+
+            <tr>
+               <th></th>
+               <th style="width: 600px;">product</th>
+               <th>quantity</th>
+               <th>price per item</th>
+            </tr>
+
+            <tr class="duct_tape_table">
+               <td><img class="stationery_pics" src="./image/duct_tape.png" alt="duct_tape"></td>
+               <td>duct tape</td>
+               <td>
+                  <div>
+                     <form action="payment.html">
+                        <label for="duct_tapeQuan"></label>
+                        <input type="number" name="duct_tapeQuantity" id="duct_tapeQuan" min="1" max="10" value="1">
+                     </form>
+                  </div>
+               </td>
+               <td>RM2.00</td>
+            </tr>
+
+
+            <tr class="pencil_case_table">
+               <td><img class="stationery_pics" src="./image/pencil_case.png" alt="pencil case"></td>
+               <td>pencil case</td>
+               <td>
+                  <div>
+                     <form action="payment.html">
+                        <label for="pencil_caseQuan"></label>
+                        <input type="number" name="pencil_caseQuantity" id="pencil_caseQuan" min="1" max="10" value="1">
+                     </form>
+                  </div>
+               </td>
+               <td>RM4.00</td>
+            </tr>
+
+            <tr class="ruler_table">
+               <td><img class="stationery_pics" src="./image/ruler.png" alt="ruler"></td>
+               <td>ruler</td>
+               <td>
+                  <div>
+                     <form action="payment.html">
+                        <label for="rulerQuan"></label>
+                        <input type="number" name="rulerQuantity" id="rulerQuan" min="1" max="10" value="1">
+                     </form>
+                  </div>
+               </td>
+               <td>RM2.50</td>
+
+            <tr class="pen_table">
+               <td><img class="stationery_pics" src="./image/pen.png" alt="pen"></td>
+               <td>pen</td>
+               <td>
+                  <div>
+                     <form action="payment.html">
+                        <label for="penQuan"></label>
+                        <input type="number" name="penQuantity" id="penQuan" min="1" max="10" value="1">
+                     </form>
+                  </div>
+               </td>
+               <td>RM15.00</td>
+            </tr>
+
+         </table>
+      </div>
+
+      <!-- buttons -->
+
+      <div class="buttons_layout">
+         <div class="submit_button">
+            <form action="payment.html">
+               <input class="submit_button_style" type="submit" value="proceed to payment">
+            </form>
+         </div>
+         <div class="product_page">
+            <button class="product_page_button">
+               <a class="product_page_link" href="payment.html">continue shopping</a>
+            </button>
+            <!--记得加进去chun mun的product page-->
+         </div>
+      </div>
+
+      <!-- show price -->
+
+      <div class="showing_price">
+         <div class="order_summary">
+            Order Summary
+         </div>
+
+         <hr>
+
+         <div class="subtotal">
+            Subtotal
+            <div class="subtotalRM">RM??</div>
+         </div>
+
+         <hr>
+
+         <div class="grand_total">
+            Grand Total
+            <div class="grand_totalRM">RM??</div>
+         </div>
+      </div>
+
+      <!-- next page  -->
+      <div class="product-list" id="list1"></div>
+      <div class="product-list" id="list2"></div>
+      <div class="product-list" id="list3"></div>
+
+      <div class="next_page">
+         <a href="cart.html" class="firstPage" onclick="openPage('list1')">&laquo;</a>
+         <a href="cart.html" class="page" id="defaultPage" onclick="openPage('list1')">1</a>
+         <a href="cart2.html" class="page" id="page" onclick="openPage('list2')">2</a>
+         <a href="cart3.html" class="page" id="page" onclick="openPage('list3')">3</a>
+         <a href="cart3.html" class="lastPage" onclick="openPage('list3')">&raquo;</a>          
+      </div>
+   </div>
+
+   </div>
+
+
+
+   <!-- ----------------------------------------------------------------------------------------------- -->
+   <footer>
+      <div class="link-container">
+        <div class="links">
+          <h1>Product</h1>
+          <ul>
+            <li><a href="feat_products.html">Product Overview</a></li>
+            <li><a href="all_product.html">All products</a></li>
+          </ul>
+        </div>
+        <div class="links">
+          <h1>Delivery</h1>
+          <ul>
+            <li><a href="delivery_main.html">Delivery Details</a></li>
+          </ul>
+        </div>
+        <div class="links">
+          <h1>Contact Us</h1>
+          <ul>
+            <li><a href="contact_us.html">Ask for Help</a></li>
+          </ul>
+        </div>
+        <div class="links">
+          <h1>Membership</h1>
+          <ul>
+            <li><a href="membership.html">Subscription</a></li>
+          </ul>
+        </div>
+        <div class="links">
+          <h1>About Us</h1>
+          <ul>
+            <li><a href="about_us.html">About Penss</a></li>
+          </ul>
+        </div>
+  
+      </div>
+  
+      <div class="logo">
+        <a href="index.html" title="Home"><img src="images/logo.jpg" alt="Home Page"></a>
+        <h1>Penss</h1>
+      </div>
+      </div>
+      <div class="contact">
+        <h2>Contact US:</h2>
+        <br>
+        <p>Tel &nbsp;&nbsp;&nbsp;: <a href="tel:+60234984734">02-34984734</a></p>
+        <p>Email: <a href="mailto:penss@gmail.com">penns@gmail.com</a></p>
+      </div>
+      <div class="whatsapp">
+        <a href="https://wa.me/601133728112"><img src="images/whatsappIcon.png" alt="whatsapp" /></a>
+      </div>
+      <div class="copyright">
+        <p> &nbsp;&#169; 2023 Penss. All rights reserved.</p>
+      </div>
+  
+    </footer>
+   <button id="b2tBtn" title="Back to Top">Top</button>
+   <div class="back2top">
+      <a href="#">
+         BACK TO THE TOP</a>
+   </div>
+   <!-- ----------------------------------------------------------------------------------------------- -->
+
+
+</body>
+
+<script src="./js/formsubmit.js"></script>
+<script src="./js/general.js"></script>
+<script src="./js/main.js"></script>
+
+
+</html>
